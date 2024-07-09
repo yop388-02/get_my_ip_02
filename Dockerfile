@@ -4,6 +4,8 @@ WORKDIR /data
 
 RUN pip install django
 
+RUN pip install requests
+
 RUN pip install mysqlclient
 
 COPY . .

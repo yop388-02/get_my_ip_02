@@ -27,6 +27,6 @@ def show_ip_addresses(request):
     except requests.RequestException:
         public_ip = 'Non disponible'
 
-    nom, prenoms = get_client_name("Y_ao", "O_thniel")
+    nom, prenoms = get_client_name("Mon_Nom", "Mon_prénom")
 
     return render(request, 'show_ips.html', {"nom" : nom, 'prenoms' : prenoms, 'private_ip': private_ip, 'public_ip': public_ip})
